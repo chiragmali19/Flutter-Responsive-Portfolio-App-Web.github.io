@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirag Mali - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="profile-section">
+      <img src="assets/images/profile.jpg" alt="Chirag Mali" class="profile-pic">
+      <h1>Chirag Mali</h1>
+      <p class="summary">
+        I am a passionate Flutter developer with a knack for creating beautiful and functional applications.
+        I love exploring new technologies and applying them to solve real-world problems.
+      </p>
+    </div>
+    <div class="buttons-section">
+      <button onclick="downloadCV()">Download CV</button>
+      <button onclick="navigateTo('about.html')">About Me</button>
+      <button onclick="navigateTo('projects.html')">Projects</button>
+      <button onclick="navigateTo('contact.html')">Contact Me</button>
+    </div>
+  </div>
+
+  <script>
+    function downloadCV() {
+      // Add your CV download logic here
+      alert('Download CV clicked!');
+    }
+
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

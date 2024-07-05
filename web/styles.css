@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #7b1fa2, #512da8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    margin-bottom: 40px;
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .summary {
+    font-size: 18px;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  /* Buttons Section */
+  .buttons-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button,
+  .button {
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #673ab7, #311b92);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  button:hover,
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* About Me Section */
+  .skills-section {
+    text-align: left;
+    margin-top: 40px;
+    max-width: 800px;
+  }
+  
+  .skills-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #673ab7;
+    width: var(--percentage);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .project h2 {
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .project:hover .project-overlay {
+    opacity: 1;
+  }
+  
+  .github-button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .github-button:hover {
+    background: #555;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    text-align: left;
+  }
+  
+  .contact-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .contact-info p i {
+    margin-right: 10px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .contact-info a:hover {
+    color: #bb86fc;
+  }
+  .contact-section a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    color: #311b92;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #673ab7;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #311b92;
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .profile-section {
+        flex: 2;
+        margin-right: 40px;
+        text-align: center;
+    }
+  
+    .buttons-section {
+      flex: 1;
+      align-items: flex-start;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+    .skills-section {
+        flex: 1;
+        margin-top: 0;
+      }
+  
+    .summary {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    button {
+      width: 250px;
+      margin: 10px 0;
+    }
+  
+    .projects-section {
+      justify-content: flex-start;
+    }
+  
+    .project {
+      width: 48%;
+    }
+  }
+  

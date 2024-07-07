@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   final String cvUrl =
-      "https://example.com/your-cv.pdf"; // Update with your CV URL
+      "https://drive.google.com/file/d/1xsbZEuRU3xUkzmlCm5Aa9IZ_M7x9EJjU/view?usp=sharing"; // Update with your CV URL
 
   const HomePage({Key? key}) : super(key: key);
 

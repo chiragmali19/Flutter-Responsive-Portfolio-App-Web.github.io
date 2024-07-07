@@ -3,8 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutMePage extends StatelessWidget {
-  final String cvUrl =
-      "https://example.com/your-cv.pdf";
+  final String cvUrl = "https://example.com/your-cv.pdf";
 
   const AboutMePage({super.key}); // Update with your CV URL
 
@@ -17,7 +16,10 @@ class AboutMePage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.deepPurpleAccent],
+            colors: [
+              Colors.lightBlue,
+              Colors.deepOrangeAccent,
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -63,7 +65,7 @@ class AboutMePage extends StatelessWidget {
               SizedBox(height: 20.h),
               Text(
                 "Hello! I'm Chirag Mali, a passionate and creative Flutter developer currently in my final year of IT studies at Indus University, Ahmedabad, with an SGPA of 7.5. I have a robust background in full-stack Android development, specializing in creating visually appealing and highly functional applications using Flutter, Dart, and Firebase.",
-                style: TextStyle(fontSize: 7.sp, color: Colors.white),
+                style: TextStyle(fontSize: 10.sp, color: Colors.white),
               ),
               SizedBox(height: 20.h),
               _buildProjectStats('10+', 'Projects completed with Flutter'),
@@ -144,7 +146,7 @@ class AboutMePage extends StatelessWidget {
   Widget _buildProjectStats(String count, String label) {
     return Text(
       '$count $label',
-      style: TextStyle(fontSize: 6.sp, color: Colors.white),
+      style: TextStyle(fontSize: 10.sp, color: Colors.white),
     );
   }
 
@@ -154,7 +156,7 @@ class AboutMePage extends StatelessWidget {
       children: [
         Text(
           skill,
-          style: TextStyle(fontSize: 10.sp, color: Colors.white),
+          style: TextStyle(fontSize: 12.sp, color: Colors.white),
         ),
         SizedBox(height: 10.h),
         LinearProgressIndicator(
@@ -195,13 +197,13 @@ class AboutMePage extends StatelessWidget {
               Icon(
                 Icons.file_download,
                 color: Colors.white,
-                size: 10.w,
+                size: 25,
               ),
               SizedBox(width: 10.w),
               Text(
                 'Download CV',
                 style: TextStyle(
-                  fontSize: 10.sp, // Responsive font size
+                  fontSize: 20, // Responsive font size
                   fontFamily: 'Montserrat',
                   color: Colors.white,
                 ),

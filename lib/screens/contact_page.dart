@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ContactPage extends StatelessWidget {
   @override
@@ -12,7 +13,10 @@ class ContactPage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.deepPurpleAccent],
+            colors: [
+              const Color.fromARGB(255, 48, 112, 223),
+              const Color.fromARGB(255, 113, 225, 238)
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -37,10 +41,10 @@ class ContactPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    _buildSocialButton(Icons.link, 'LinkedIn',
+                    _buildSocialButton(FontAwesomeIcons.linkedin, 'LinkedIn',
                         'https://www.linkedin.com/in/chirag-mali-491b72278?/'),
                     SizedBox(width: 20.w),
-                    _buildSocialButton(Icons.code, 'GitHub',
+                    _buildSocialButton(FontAwesomeIcons.github, 'GitHub',
                         'https://github.com/Chiragmali19'),
                   ],
                 ),
@@ -63,7 +67,7 @@ class ContactPage extends StatelessWidget {
             children: [
               Icon(
                 icon,
-                size: 8.sp,
+                size: 10.sp,
                 color: Colors.white,
               ),
               SizedBox(width: 10.w),
@@ -127,7 +131,7 @@ class ContactPage extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
-                  fontSize: 10.sp, // Responsive font size
+                  fontSize: 12.sp, // Responsive font size
                   fontFamily: 'Montserrat',
                   color: Colors.white,
                 ),

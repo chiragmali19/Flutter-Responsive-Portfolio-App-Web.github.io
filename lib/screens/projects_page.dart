@@ -172,10 +172,10 @@ class ProjectsPage extends StatelessWidget {
 
 final List<Map<String, String>> projects = [
   {
-    'title': 'E-Commerce-Application',
+    'title': 'Flutter-Weather-App',
     'description': 'Flutter Project 1',
-    'githubLink': 'https://github.com/chiragmali19/Flutter-E-Commerce-app.git',
-    'imagePath': 'assets/images/ecommerc.png',
+    'githubLink': 'https://github.com/chiragmali19/Flutter-Weather-Application.git',
+    'imagePath': 'assets/images/weather app.png',
   },
   {
     'title': 'Online-Music-Application',

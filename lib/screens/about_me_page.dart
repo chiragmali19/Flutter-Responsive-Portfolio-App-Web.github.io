@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutMePage extends StatelessWidget {
-  final String cvUrl = "https://example.com/your-cv.pdf";
+  final String cvUrl = "https://drive.google.com/file/d/1HcbM6r-N-PqXt-8tO1GF4XgIH0ZnRsfS/view?usp=drive_link";
 
   const AboutMePage({super.key}); // Update with your CV URL
 
